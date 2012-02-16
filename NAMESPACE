@@ -1,0 +1,3 @@
+useDynLib(WideLM)
+export(wideLM)
+import(Rcpp)

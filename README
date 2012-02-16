@@ -1,0 +1,51 @@
+Welcome to the 'WideLM' package.
+
+A few notes which may help with installation:
+
+ - There is currently no version checking in the configuration script,
+   so the following should be verified independently:
+
+    - It is assumed that a working CUDA card, with compute capability
+      >= 2.0, has been installed.
+
+    - It is also assumed that the CUDA Toolkit has been installed, with
+      version >= 4.1.  Runtime problems have been noted with older
+      versions.
+
+ - The installer will permit specification of the CUDA home directory
+   by means of the '--with-cuda-home=[CUDA home]' option.
+
+ - The CUDA compiler, 'nvcc', uses the resident 'gcc' to generate code
+   for the CPU.  Version 4.1 of the Toolkit offers an 'nvcc' which
+   will not work with 'gcc' versions more recent than 4.5
+
+   If necessary, alternate versions of 'gcc' can be installed on the
+   host system.  In order for the package installer to use an alternate
+   version of 'gcc', the '--with-compiler-bindir=[alternate GCC path]'
+   should be used.
+
+
+Apologia:
+
+  This is a first release.  We have done our best to weed out bugs,
+  but they may well still be lurking.  Please notify the maintainers
+  of any bugs encountered.
+
+  The current version is limited to two predictors, plus interaction.
+  It should be possible to compute general-order interactions on the
+  GPU, but this is tabled for a future release.
+
+  The code contains architecture-specific constants, such as a maximum
+  thread count, which preclude use on compute-capability 1.3.  We
+  may be able to clean these up at some point if there is enough
+  interest.
+
+Kudos:
+
+  Special thanks to Josh Buckner, lead author of the 'Gputools'
+  package, who helped make this code CRAN-friendly.
+
+  Thanks also to Dirk Eddelbuettel, coauthor of the 'Rcpp' package,
+  who also helped get this package off the ground.
+
+  

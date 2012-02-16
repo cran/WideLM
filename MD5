@@ -1,0 +1,13 @@
+aec707039d453a721d6f07c23a4a7fc2 *DESCRIPTION
+07e9dc870537a717dcb732248dc715b3 *NAMESPACE
+e9389f2c80fe63aef54b7d453ea86bc6 *R/widelm.R
+4c82f99d331272bd68c1e1ed4e963b3f *README
+866f48149e66963612f8e3bd5ae9e0ab *configure
+f28a9f28f4489c5bb929e7f1290aeb40 *configure.ac
+590bf4ab92628453d8117d382baf6592 *man/wideLM.Rd
+0603b5bd76ec7f874be2f3f610bf7ae7 *src/Makefile.in
+d41d8cd98f00b204e9800998ecf8427e *src/fake.c
+0f64719bf35513f00c1ed79069fa68df *src/miniblas.h
+abd3b2e2f0b255650c59af83575747ce *src/wideLSFitCoproc.cu
+f2fa49d0ee683c3864a21c2bffef0ae2 *src/wideLSFitCoproc.h
+9af7cedc4ee105e31141b5016b210fe3 *src/wideLSFitHost.cpp
